@@ -1,0 +1,6 @@
+framework module CustomCalculatorFramework {
+  umbrella header "CustomCalculatorFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}

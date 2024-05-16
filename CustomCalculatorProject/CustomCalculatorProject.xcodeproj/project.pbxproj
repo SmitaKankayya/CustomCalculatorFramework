@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0160CA1010807C49328506 /* Pods_CustomCalculatorProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7220BEE6B262D04BAA555607 /* Pods_CustomCalculatorProject.framework */; };
 		20DE89B42BF49DF5008F755D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DE89B32BF49DF5008F755D /* AppDelegate.swift */; };
 		20DE89B62BF49DF5008F755D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DE89B52BF49DF5008F755D /* SceneDelegate.swift */; };
 		20DE89B82BF49DF5008F755D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DE89B72BF49DF5008F755D /* ViewController.swift */; };
 		20DE89BB2BF49DF6008F755D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20DE89B92BF49DF6008F755D /* Main.storyboard */; };
 		20DE89BD2BF49DF7008F755D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20DE89BC2BF49DF7008F755D /* Assets.xcassets */; };
 		20DE89C02BF49DF7008F755D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20DE89BE2BF49DF7008F755D /* LaunchScreen.storyboard */; };
-		20DE8A622BF61037008F755D /* CustomCalculatorFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20DE8A602BF61034008F755D /* CustomCalculatorFramework.framework */; };
-		20DE8A632BF61037008F755D /* CustomCalculatorFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20DE8A602BF61034008F755D /* CustomCalculatorFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				20DE8A632BF61037008F755D /* CustomCalculatorFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,7 +38,9 @@
 		20DE89BC2BF49DF7008F755D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20DE89BF2BF49DF7008F755D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20DE89C12BF49DF7008F755D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20DE8A602BF61034008F755D /* CustomCalculatorFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomCalculatorFramework.framework; sourceTree = "<group>"; };
+		3EE66668D529D99781CB9F4E /* Pods-CustomCalculatorProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomCalculatorProject.debug.xcconfig"; path = "Target Support Files/Pods-CustomCalculatorProject/Pods-CustomCalculatorProject.debug.xcconfig"; sourceTree = "<group>"; };
+		7220BEE6B262D04BAA555607 /* Pods_CustomCalculatorProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomCalculatorProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED393256F1A681B40F80B983 /* Pods-CustomCalculatorProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomCalculatorProject.release.xcconfig"; path = "Target Support Files/Pods-CustomCalculatorProject/Pods-CustomCalculatorProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20DE8A622BF61037008F755D /* CustomCalculatorFramework.framework in Frameworks */,
+				1A0160CA1010807C49328506 /* Pods_CustomCalculatorProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				20DE89B22BF49DF5008F755D /* CustomCalculatorProject */,
-				20DE8A602BF61034008F755D /* CustomCalculatorFramework.framework */,
 				20DE89B12BF49DF5008F755D /* Products */,
+				7939B9CD470DE57D0D01FFA4 /* Pods */,
+				A2B003D1C3A54461421F7652 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +87,23 @@
 			path = CustomCalculatorProject;
 			sourceTree = "<group>";
 		};
+		7939B9CD470DE57D0D01FFA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EE66668D529D99781CB9F4E /* Pods-CustomCalculatorProject.debug.xcconfig */,
+				ED393256F1A681B40F80B983 /* Pods-CustomCalculatorProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A2B003D1C3A54461421F7652 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7220BEE6B262D04BAA555607 /* Pods_CustomCalculatorProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,10 +111,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20DE89C42BF49DF7008F755D /* Build configuration list for PBXNativeTarget "CustomCalculatorProject" */;
 			buildPhases = (
+				DEF83ED617CE8E65D9178579 /* [CP] Check Pods Manifest.lock */,
 				20DE89AC2BF49DF5008F755D /* Sources */,
 				20DE89AD2BF49DF5008F755D /* Frameworks */,
 				20DE89AE2BF49DF5008F755D /* Resources */,
 				20DE89CD2BF4B5FB008F755D /* Embed Frameworks */,
+				AB7545E4DBE34F29B0AFE10C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +172,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AB7545E4DBE34F29B0AFE10C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomCalculatorProject/Pods-CustomCalculatorProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomCalculatorProject/Pods-CustomCalculatorProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomCalculatorProject/Pods-CustomCalculatorProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEF83ED617CE8E65D9178579 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomCalculatorProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		20DE89AC2BF49DF5008F755D /* Sources */ = {
@@ -307,11 +369,13 @@
 		};
 		20DE89C52BF49DF7008F755D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EE66668D529D99781CB9F4E /* Pods-CustomCalculatorProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomCalculatorProject",
@@ -343,11 +407,13 @@
 		};
 		20DE89C62BF49DF7008F755D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED393256F1A681B40F80B983 /* Pods-CustomCalculatorProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomCalculatorProject",

@@ -1,0 +1,16 @@
+PODS:
+  - CustomCalculatorFramework (1.0.0)
+
+DEPENDENCIES:
+  - CustomCalculatorFramework (from `../CustomCalculatorFramework`)
+
+EXTERNAL SOURCES:
+  CustomCalculatorFramework:
+    :path: "../CustomCalculatorFramework"
+
+SPEC CHECKSUMS:
+  CustomCalculatorFramework: c136bf8a1ba3b6bd78fa6c6f5bd00ba640bd0bd2
+
+PODFILE CHECKSUM: 76c25b306c4688d375773fe08f457eb0707fddda
+
+COCOAPODS: 1.15.2
